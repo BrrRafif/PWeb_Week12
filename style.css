@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    color: #333;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 230px;
+    display: block;       
+    margin-top: 15px;    
+    margin-bottom: 12px; 
+    border: 2px solid #7b7b7b; 
+}
+
+.image-table {
+    width: 130px;     
+    border: 1px solid #919090; 
+}
+
+.column-name {
+    font-weight: bold;
+    color: #444;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #e2f0ff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form button[type="submit"],
+.btn-primary {
+    background: linear-gradient(135deg, #3aa6ee, #1f6da1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: background-color 0.3s ease;
+    width: 160px;
+    height: 40px;
+}
+
+form button[type="submit"]:hover,
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4799d0, #1a5881);
+    transform: translateY(-1px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #eef;
+}
+
+.action-links a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.action-links a:hover {
+    text-decoration: underline;
+}
+
+.total {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.back-button-container {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.back-button {
+    background: linear-gradient(135deg, #7a7a7a, #353535); 
+    color: white !important; 
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #5a6268, #1a1a1a);
+    transform: translateY(-1px);
+}
+
+.flash-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.action-links a .glyphicon-trash {
+    color: #d9534f; 
+}
+
+.action-links a:hover .glyphicon-edit {
+    color: #1500b8;
+}
+
+.action-links a:hover .glyphicon-trash {
+    color: #771714;
+}
+
+footer {
+    text-align: center;      
+    padding: 30px 20px;         
+    background-color: #3333;
+    color: #333030;             
+    margin-top: 100px;        
+    margin-top: auto;
+} 
+
+footer p {
+    margin: 0;               
+    font-size: 14px;         
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95% !important;
+        padding: 10px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    table {
+        min-width: 800px;
+    }
+    
+    table th, table td {
+        width: 60px !important; 
+        height: 60px !important;
+        object-fit: cover;
+    }
+
+    .action-links a {
+        margin-right: 5px;
+    }
+    
+    .image-table {
+        width: 80px !important;
+        height: auto;
+    }
+}
+
